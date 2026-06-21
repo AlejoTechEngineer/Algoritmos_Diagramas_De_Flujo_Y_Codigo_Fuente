@@ -23,6 +23,20 @@ Implementación del **método de la secante** para búsqueda de raíces de funci
 | `Secante.docx` | Implementación y análisis del método |
 | `*.pdf` | Informe con iteraciones y convergencia |
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[desarrolloMetodoSecante.fprg] --> B[desarrolloMetodoSecanteVisorDeCodigoFuente.py]
+    C[desarrolloMetodoTradicional.fprg] --> D[desarrolloMetodoTradicionalVisorDeCodigoFuente.py]
+    B --> E[desarrolloMetodoSecanteAdm.ipynb]
+    D --> F[desarrolloMetodoTradicionalAdm.ipynb]
+    E --> G{x_n+1 = x_n - f-x_n * -x_n - x_n-1 / -f-x_n - f-x_n-1}
+    F --> G
+    G -->|No converge| G
+    G -->|Converge| H[tablas.xlsx - iteraciones y errores]
+```
+
 ## Método de la Secante
 
 La aproximación entre dos puntos elimina la necesidad de calcular la derivada analíticamente:
@@ -37,34 +51,6 @@ Convergencia de orden superlineal (~1.618, la razón áurea).
 **Autor:** Alejandro De Mendoza — Ingeniero Informático · Especialista Ingeniería de Software
 
 ---
-
-## Arquitectura
-
-```mermaid
-flowchart TD
-    A[desarrolloMetodoSecante.fprg] --> B[desarrolloMetodoSecanteVisorDeCodigoFuente.py]
-    C[desarrolloMetodoTradicional.fprg] --> D[desarrolloMetodoTradicionalVisorDeCodigoFuente.py]
-    B --> E[desarrolloMetodoSecanteAdm.ipynb]
-    D --> F[desarrolloMetodoTradicionalAdm.ipynb]
-    E --> G{x_n+1 = x_n - f-x_n * -x_n - x_n-1 / -f-x_n - f-x_n-1}
-    F --> G
-    G -->|No converge| G
-    G -->|Converge| H[tablas.xlsx - iteraciones y errores]
-```
-
-## Arquitectura
-
-```mermaid
-flowchart TD
-    A[desarrolloMetodoSecante.fprg] --> B[desarrolloMetodoSecanteVisorDeCodigoFuente.py]
-    C[desarrolloMetodoTradicional.fprg] --> D[desarrolloMetodoTradicionalVisorDeCodigoFuente.py]
-    B --> E[desarrolloMetodoSecanteAdm.ipynb]
-    D --> F[desarrolloMetodoTradicionalAdm.ipynb]
-    E --> G{x_n+1 = x_n - f-x_n * -x_n - x_n-1 / -f-x_n - f-x_n-1}
-    F --> G
-    G -->|No converge| G
-    G -->|Converge| H[tablas.xlsx - iteraciones y errores]
-```
 
 ## Autor
 
