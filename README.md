@@ -1,3 +1,5 @@
+<div align="center">
+
 # Método de la Secante — Algoritmos, Diagramas de Flujo y Código Fuente
 
 ![Numerical](https://img.shields.io/badge/Métodos-Numéricos-FF6B35?style=for-the-badge)
@@ -6,6 +8,10 @@
 > Búsqueda de raíces con el método de la secante: diagrama de flujo en FlowPro, código fuente y análisis iterativo.
 
 ## Descripción
+
+</div>
+
+---
 
 Implementación del **método de la secante** para búsqueda de raíces de funciones reales. A diferencia de Newton-Raphson, no requiere el cálculo explícito de la derivada — utiliza una aproximación por diferencias finitas entre dos puntos consecutivos. El proyecto incluye el diagrama de flujo estructurado en **FlowPro** y el código fuente con análisis de iteraciones.
 
@@ -29,3 +35,12 @@ Convergencia de orden superlineal (~1.618, la razón áurea).
 
 **Asignatura:** Métodos Numéricos · **Institución:** Ingeniería Informática
 **Autor:** Alejandro De Mendoza — Ingeniero Informático · Especialista Ingeniería de Software
+
+---
+
+## Autor
+
+**Alejandro De Mendoza**  
+Ingeniero Informático · Especialista en IA · Especialista en Ingeniería de Software · Máster en Arquitectura de Software
+
+[![GitHub](https://img.shields.io/badge/GitHub-AlejoTechEngineer-181717?style=for-the-badge&logo=github)](https://github.com/AlejoTechEngineer)
