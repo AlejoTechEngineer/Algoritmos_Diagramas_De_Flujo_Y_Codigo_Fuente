@@ -38,6 +38,20 @@ Convergencia de orden superlineal (~1.618, la razón áurea).
 
 ---
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[desarrolloMetodoSecante.fprg] --> B[desarrolloMetodoSecanteVisorDeCodigoFuente.py]
+    C[desarrolloMetodoTradicional.fprg] --> D[desarrolloMetodoTradicionalVisorDeCodigoFuente.py]
+    B --> E[desarrolloMetodoSecanteAdm.ipynb]
+    D --> F[desarrolloMetodoTradicionalAdm.ipynb]
+    E --> G{x_n+1 = x_n - f-x_n * -x_n - x_n-1 / -f-x_n - f-x_n-1}
+    F --> G
+    G -->|No converge| G
+    G -->|Converge| H[tablas.xlsx - iteraciones y errores]
+```
+
 ## Autor
 
 **Alejandro De Mendoza**  
